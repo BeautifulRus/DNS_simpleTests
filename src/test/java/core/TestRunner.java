@@ -1,10 +1,12 @@
+package core;
+
+
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.ConfigurationParameters;
 import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.Suite;
 
-
-import static io.cucumber.core.options.Constants.*;
+import static io.cucumber.junit.platform.engine.Constants.*;
 
 @Suite
 @IncludeEngines("cucumber")
