@@ -21,7 +21,6 @@ abstract public class Driver {
 
 
     protected static WebDriver driver;
-
     protected static WebDriverWait wait;
 
 
@@ -33,12 +32,10 @@ abstract public class Driver {
 
 
     private void initLocalDriver() {
-        if ("firefox".equalsIgnoreCase(System.getProperty("type.browser"))) {
-            driver = new FirefoxDriver();
-        }else
+
         if ("chrome".equalsIgnoreCase(System.getProperty("type.browser"))){
-            driver = new ChromeDriver();
-        }else
+          driver = new ChromeDriver();
+        }
         if ("edge".equalsIgnoreCase(System.getProperty("type.browser"))){
             driver = new EdgeDriver();
         }else Assertions.fail("I don't work with that browser. Please change the variable |type.browser| from file |application.properties| to the prescribed option in the code");
